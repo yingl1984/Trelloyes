@@ -5,7 +5,8 @@ import App from './App';
 import STORE from './store';
 
 ReactDOM.render(
-  <App store={STORE}/>,
+  // <App store={STORE}/>,
+  <App />,
   document.getElementById('root')
 );
 

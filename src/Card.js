@@ -1,11 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './Card.css';
 
 function Card(props){
+   
     return(
         <div className='Card'>
-            <button type='button'>delete</button>
+            <button 
+            onClick={() => props.onDeleteItem(props.cardID)}
+            type='button'>delete</button>
             <h3>
                 {props.title}
             </h3>
